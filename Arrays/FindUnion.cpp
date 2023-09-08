@@ -1,0 +1,16 @@
+vector < int > FindUnion(int arr1[], int arr2[], int n, int m) {
+  int i = 0, j = 0; // pointers
+  vector < int > Union; // Uninon vector
+  while (i < n && j < m) {
+    if (arr1[i] <= arr2[j]) // Case 1 and 2
+    {
+      if (Union.size() == 0 || Union.back() != arr1[i])
+        Union.push_back(arr1[i]);
+      i++;
+    } else // case 3
+    {
+      if (Union.size() == 0 || Union.back() != arr2[j])
+        Union.push_back(arr2[j]);
+      j++;
+    }
+  }
