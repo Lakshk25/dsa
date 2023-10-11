@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ************************* KANDANE ALGO ************************
+// ************************* KADANE ALGO ************************
 
 int maxSubArray(vector<int> &nums)
 {
